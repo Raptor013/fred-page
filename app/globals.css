@@ -188,7 +188,7 @@ a {
 }
 
 .hero-pulse {
-  animation: hero-pulse 15s ease-in-out infinite alternate;
+  animation: hero-pulse 5s ease-in-out infinite alternate;
   transform-origin: center;
   will-change: transform, opacity;
 }
