@@ -137,7 +137,7 @@ export function LandingPage() {
             ARTISTA TATUADOR
           </p>
           <h1
-            className={`font-display text-[4.2rem] leading-[0.88] tracking-[-0.05em] text-white sm:text-[6.5rem] md:text-[8.5rem] lg:text-[11rem] ${
+            className={`font-display text-[3.5rem] leading-[0.88] tracking-[-0.05em] text-white sm:text-[6.5rem] md:text-[8.5rem] lg:text-[11rem] ${
               allowMotion ? "hero-title-enter" : ""
             }`}
           >

@@ -12,7 +12,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: Impact, Haettenschweiler, "Arial Black", sans-serif;
+  --font-display: var(--font-display);
 }
 
 * {
@@ -48,7 +48,8 @@ a {
 }
 
 .font-display {
-  font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
+  font-family: var(--font-display), "Arial Narrow", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
 }
 
 .section-frame {

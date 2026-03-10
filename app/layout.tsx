@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
+
+const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-display",
+});
 
 export const metadata: Metadata = {
   title: "sauer.tattoos",
@@ -13,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body className={bebasNeue.variable}>{children}</body>
     </html>
   );
 }
