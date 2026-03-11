@@ -6,7 +6,6 @@ import { useEffect, useRef, useState } from "react";
 const portfolioItems = [
   {
     title: "A Aranha",
-    type: "blackwork / full contrast",
     frame: "aspect-[4/5] md:aspect-[4/6]",
     accent: "from-[#140005] via-[#2b020f] to-black",
     artwork:
@@ -14,7 +13,6 @@ const portfolioItems = [
   },
   {
     title: "Médico da Peste",
-    type: "realismo / shadowwork",
     frame: "aspect-[4/5] md:aspect-[4/5]",
     accent: "from-black via-[#170005] to-[#25000d]",
     artwork:
@@ -22,7 +20,6 @@ const portfolioItems = [
   },
   {
     title: "Espantalho da Morte",
-    type: "custom / vertical flow",
     frame: "aspect-[4/6] md:aspect-[4/7]",
     accent: "from-[#160208] via-black to-[#1c1c1c]",
     artwork:
@@ -30,7 +27,6 @@ const portfolioItems = [
   },
   {
     title: "A Lacraia",
-    type: "large scale / body project",
     frame: "aspect-[4/5] md:aspect-[4/6]",
     accent: "from-[#1a0007] via-[#090909] to-black",
     artwork:
@@ -214,7 +210,7 @@ export function LandingPage() {
         </div>
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {portfolioItems.map((item, index) => (
+          {portfolioItems.map((item) => (
             <article
               key={item.title}
               className={`portfolio-card group ${item.frame}`}
@@ -224,24 +220,14 @@ export function LandingPage() {
                 className="absolute inset-0 transition-transform duration-700 group-hover:scale-105"
                 style={{ backgroundImage: item.artwork }}
               />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,rgba(0,0,0,0.15)_40%,rgba(0,0,0,0.95)_100%)]" />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,rgba(0,0,0,0.18)_42%,rgba(0,0,0,0.98)_100%)]" />
               <div className="absolute inset-0 bg-[#ff003c]/0 transition-colors duration-500 group-hover:bg-[#ff003c]/18" />
-              <div className="relative flex h-full min-h-[30rem] flex-col justify-between p-6 md:min-h-0">
-                <div className="flex items-start justify-between gap-4">
-                  <span className="border border-white/20 px-3 py-2 text-[0.65rem] uppercase tracking-[0.35em] text-white/70">
-                    {item.type}
-                  </span>
-                  <span className="text-[0.65rem] uppercase tracking-[0.35em] text-white/40">
-                    peça {index + 1}
-                  </span>
-                </div>
-                <div className="translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
-                  <h3 className="font-display text-3xl leading-none tracking-[-0.04em] sm:text-5xl">
+              <div className="relative min-h-[30rem] md:min-h-0" />
+              <div className="absolute inset-x-0 bottom-0 z-10 p-5 sm:p-6">
+                <div className="bg-black/45 px-4 py-3 backdrop-blur-[1px] sm:bg-transparent sm:px-0 sm:py-0">
+                  <h3 className="font-display text-[2rem] leading-none tracking-[-0.04em] text-white drop-shadow-[0_8px_24px_rgba(0,0,0,0.95)] sm:text-5xl">
                     {item.title}
                   </h3>
-                  <p className="mt-3 max-w-sm text-sm uppercase tracking-[0.28em] text-white/62">
-                    preto profundo. brilho controlado. presença definitiva.
-                  </p>
                 </div>
               </div>
             </article>
