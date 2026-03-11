@@ -361,6 +361,43 @@ export function LandingPage() {
         </div>
       </section>
 
+      <section className="section-frame px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+        <div className="mx-auto max-w-4xl">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Centro%2C+Rio%20de%20Janeiro%20-%20RJ"
+            target="_blank"
+            rel="noreferrer"
+            className="group relative flex flex-col gap-6 overflow-hidden border border-[#ff003c]/30 bg-[linear-gradient(180deg,rgba(255,0,60,0.08),rgba(0,0,0,0.92))] px-6 py-8 transition-all duration-300 hover:border-[#ff003c]/70 hover:shadow-[0_0_36px_rgba(255,0,60,0.14)] sm:flex-row sm:items-center sm:justify-between sm:px-8"
+          >
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,rgba(255,0,60,0.16),transparent_32%)] opacity-70 transition-opacity duration-300 group-hover:opacity-100" />
+            <div className="relative flex items-center gap-4">
+              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-[#ff003c]/45 bg-[#140106] text-[#ff003c] shadow-[0_0_24px_rgba(255,0,60,0.18)]">
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  className="h-6 w-6 fill-current"
+                >
+                  <path d="M12 2C8.135 2 5 5.135 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.865-3.135-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" />
+                </svg>
+              </span>
+              <div>
+                <p className="section-kicker text-[#ff8aa7]">ENDEREÇO</p>
+                <h2 className="font-display mt-2 text-3xl leading-none tracking-[-0.04em] sm:text-4xl">
+                  Centro, Rio de Janeiro
+                </h2>
+              </div>
+            </div>
+
+            <div className="relative flex items-center gap-4 self-start sm:self-center">
+              <p className="max-w-xs text-sm uppercase tracking-[0.28em] text-white/58">
+                abrir no google maps
+              </p>
+              <span className="h-px w-12 bg-[#ff003c]/55 transition-all duration-300 group-hover:w-20" />
+            </div>
+          </a>
+        </div>
+      </section>
+
       <section
         id="contato"
         className="section-frame px-6 py-20 sm:px-8 lg:px-12 lg:py-24"
