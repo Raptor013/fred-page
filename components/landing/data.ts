@@ -52,6 +52,27 @@ export const styles = [
   },
 ] as const;
 
+export const whyChooseItems = [
+  {
+    icon: "spark",
+    title: "Criação autoral",
+    description:
+      "A ideia ganha desenho exclusivo, pensado para a anatomia, para o conceito da peça e para uma leitura forte no corpo real.",
+  },
+  {
+    icon: "shield",
+    title: "Técnica com consistência",
+    description:
+      "Traço, contraste e profundidade são executados com controle para entregar presença visual na sessão e solidez depois da cicatrização.",
+  },
+  {
+    icon: "compass",
+    title: "Processo sem ruído",
+    description:
+      "Do briefing aos cuidados finais, cada etapa é conduzida com direção clara para que o cliente saiba o que esperar antes, durante e depois da sessão.",
+  },
+] as const;
+
 export const processSteps = [
   {
     index: "01",

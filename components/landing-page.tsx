@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AboutSection } from "./landing/about-section";
 import { ContactSection } from "./landing/contact-section";
+import { FaqSection } from "./landing/faq-section";
 import { FloatingWhatsAppButton } from "./landing/floating-whatsapp-button";
 import { FooterSection } from "./landing/footer-section";
 import { HeroSection } from "./landing/hero-section";
@@ -12,6 +13,8 @@ import { ProcessSection } from "./landing/process-section";
 import { QuoteCtaSection } from "./landing/quote-cta-section";
 import { StylesSection } from "./landing/styles-section";
 import { TattooCareSection } from "./landing/tattoo-care-section";
+import { TestimonialsSection } from "./landing/testimonials-section";
+import { WhyChooseSection } from "./landing/why-choose-section";
 
 export function LandingPage() {
   const heroRef = useRef<HTMLElement | null>(null);
@@ -90,9 +93,12 @@ export function LandingPage() {
       />
       <AboutSection />
       <PortfolioSection />
+      <WhyChooseSection />
+      <TestimonialsSection />
       <StylesSection />
       <QuoteCtaSection />
       <ProcessSection />
+      <FaqSection />
       <TattooCareSection />
       <ContactSection />
       <LocationSection />

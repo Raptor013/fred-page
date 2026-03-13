@@ -45,13 +45,30 @@ export function HeroSection({
         >
           ARTISTA TATUADOR
         </p>
-        <h1
-          className={`font-display text-[3.5rem] leading-[0.88] tracking-[-0.05em] text-white sm:text-[6.5rem] md:text-[8.5rem] lg:text-[11rem] ${
-            allowMotion ? "hero-title-enter" : ""
-          }`}
-        >
-          SAUER.TATTOOS
-        </h1>
+        <div className="relative isolate">
+          <div
+            aria-hidden="true"
+            className={`hero-neon-backdrop absolute left-1/2 top-1/2 h-[30%] w-[78%] -translate-x-1/2 -translate-y-[46%] ${
+              allowMotion ? "hero-neon-backdrop-animate" : ""
+            }`}
+          />
+          <div
+            aria-hidden="true"
+            className={`hero-neon-reflection absolute left-1/2 top-[54%] h-[72%] w-[74%] -translate-x-1/2 -translate-y-1/2 ${
+              allowMotion ? "hero-neon-reflection-animate" : ""
+            }`}
+          />
+          <h1
+            className="font-display relative text-[3.5rem] leading-[0.88] tracking-[-0.05em] text-white sm:text-[6.5rem] md:text-[8.5rem] lg:text-[11rem]"
+          >
+            <span
+              className={`hero-neon-sign ${allowMotion ? "hero-neon-animate" : ""}`}
+              data-text="SAUER.TATTOOS"
+            >
+              SAUER.TATTOOS
+            </span>
+          </h1>
+        </div>
         <div className="mt-10 flex w-full max-w-md flex-col gap-4 sm:mt-12 sm:flex-row sm:justify-center">
           <a
             href="https://www.instagram.com/sauer.tattoos/"
