@@ -407,14 +407,32 @@ a {
       0 0 44px rgba(255, 0, 60, 0.2),
       0 0 72px rgba(255, 0, 60, 0.12);
   }
+  64% {
+    color: rgba(255, 244, 247, 1);
+    opacity: 1;
+    text-shadow:
+      0 0 8px rgba(255, 166, 189, 0.58),
+      0 0 20px rgba(255, 0, 60, 0.4),
+      0 0 38px rgba(255, 0, 60, 0.17),
+      0 0 60px rgba(255, 0, 60, 0.09);
+  }
+  82% {
+    color: rgba(255, 245, 247, 1);
+    opacity: 1;
+    text-shadow:
+      0 0 7px rgba(255, 167, 190, 0.5),
+      0 0 17px rgba(255, 0, 60, 0.34),
+      0 0 32px rgba(255, 0, 60, 0.13),
+      0 0 50px rgba(255, 0, 60, 0.07);
+  }
   100% {
     color: #fff5f7;
     opacity: 1;
     text-shadow:
-      0 0 7px rgba(255, 168, 190, 0.46),
-      0 0 16px rgba(255, 0, 60, 0.3),
-      0 0 30px rgba(255, 0, 60, 0.12),
-      0 0 48px rgba(255, 0, 60, 0.06);
+      0 0 6px rgba(255, 164, 188, 0.34),
+      0 0 12px rgba(255, 0, 60, 0.22),
+      0 0 22px rgba(255, 0, 60, 0.08),
+      0 0 36px rgba(255, 0, 60, 0.04);
   }
 }
 
@@ -451,8 +469,16 @@ a {
     opacity: 0.62;
     filter: blur(9px);
   }
+  64% {
+    opacity: 0.58;
+    filter: blur(9px);
+  }
+  82% {
+    opacity: 0.52;
+    filter: blur(9px);
+  }
   100% {
-    opacity: 0.54;
+    opacity: 0.48;
     filter: blur(9px);
   }
 }
@@ -490,9 +516,17 @@ a {
     opacity: 0.22;
     filter: blur(22px);
   }
+  64% {
+    opacity: 0.2;
+    filter: blur(21px);
+  }
+  82% {
+    opacity: 0.17;
+    filter: blur(21px);
+  }
   100% {
     opacity: 0.16;
-    filter: blur(22px);
+    filter: blur(20px);
   }
 }
 
@@ -531,10 +565,20 @@ a {
     filter: blur(24px);
     transform: translate(-50%, -46%) scale(1.01);
   }
-  100% {
+  64% {
+    opacity: 0.2;
+    filter: blur(23px);
+    transform: translate(-50%, -46%) scale(1.01);
+  }
+  82% {
     opacity: 0.16;
-    filter: blur(24px);
-    transform: translate(-50%, -46%) scale(1.03);
+    filter: blur(22px);
+    transform: translate(-50%, -46%) scale(1.01);
+  }
+  100% {
+    opacity: 0.1;
+    filter: blur(22px);
+    transform: translate(-50%, -46%) scale(1.01);
   }
 }
 
@@ -558,10 +602,20 @@ a {
     filter: blur(32px);
     transform: translate(-50%, -50%) scale(1.02);
   }
+  64% {
+    opacity: 0.07;
+    filter: blur(31px);
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+  82% {
+    opacity: 0.055;
+    filter: blur(30px);
+    transform: translate(-50%, -50%) scale(1.015);
+  }
   100% {
-    opacity: 0.05;
-    filter: blur(32px);
-    transform: translate(-50%, -50%) scale(1.03);
+    opacity: 0.04;
+    filter: blur(28px);
+    transform: translate(-50%, -50%) scale(1.01);
   }
 }
 
